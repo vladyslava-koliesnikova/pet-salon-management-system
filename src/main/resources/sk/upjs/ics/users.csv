@@ -1,0 +1,11 @@
+id,role,name,surname,password,email,birthdate,dogs
+1,COSTUMER,John,Doe,password123,john.doe@example.com,1990-05-12,1_2_3
+2,EMPLOYEE,Jane,Smith,securepassword,jane.smith@example.com,1985-11-23,""
+3,COSTUMER,Michael,Johnson,qwerty123,michael.j@example.com,1995-08-20,4
+4,COSTUMER,Emily,Davis,hello2023,emily.davis@example.com,1988-03-15,""
+5,EMPLOYEE,Robert,Garcia,robertpass,robert.garcia@example.com,1978-06-22,5
+6,COSTUMER,Sarah,Miller,sarahpass,sarah.miller@example.com,2000-07-30,6
+7,EMPLOYEE,William,Martinez,williampass,william.martinez@example.com,1992-09-10,7
+8,COSTUMER,Olivia,Hernandez,oliviapass,olivia.h@example.com,1998-01-25,8
+9,EMPLOYEE,James,Lopez,james2024,james.lopez@example.com,1980-04-17,9
+10,COSTUMER,Charlotte,Wright,charlotte123,charlotte.w@example.com,2002-05-11,10

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER"
+      maxHeight="-Infinity"
+      maxWidth="-Infinity"
+      minHeight="-Infinity"
+      minWidth="-Infinity"
+      prefHeight="400.0"
+      prefWidth="600.0"
+      xmlns="http://javafx.com/javafx/22"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sk.upjs.ics.StatisticsController">
+
+    <children>
+        <GridPane alignment="TOP_CENTER"
+                  gridLinesVisible="true"
+                  prefHeight="169.0"
+                  prefWidth="600.0">
+
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES"
+                                   minWidth="10.0"
+                                   prefWidth="300.0" />
+                <ColumnConstraints hgrow="SOMETIMES"
+                                   minWidth="10.0"
+                                   prefWidth="300.0" />
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints minHeight="10.0"
+                                prefHeight="30.0"
+                                vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0"
+                                prefHeight="30.0"
+                                vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0"
+                                prefHeight="30.0"
+                                vgrow="SOMETIMES" />
+            </rowConstraints>
+
+            <children>
+                <Button fx:id="numberOfCostumersButton"
+                        onAction="#numberOfCostumersButtonAction"
+                        mnemonicParsing="false"
+                        prefHeight="57.0"
+                        prefWidth="343.0"
+                        text="Number of customers"
+                        GridPane.halignment="CENTER"
+                        GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+
+                <Button fx:id="numberOfOrdersButton"
+                        onAction="#numberOfOrdersButtonAction"
+                        mnemonicParsing="false"
+                        prefHeight="57.0"
+                        prefWidth="341.0"
+                        text="Number of orders"
+                        GridPane.columnIndex="1"
+                        GridPane.halignment="CENTER"
+                        GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+
+                <Button fx:id="mostPopularServiceButton"
+                        onAction="#mostPopularServiceButtonAction"
+                        mnemonicParsing="false"
+                        prefHeight="114.0"
+                        prefWidth="300.0"
+                        text="Most popular service"
+                        GridPane.rowIndex="1"
+                        GridPane.halignment="CENTER"
+                        GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+
+                <Button fx:id="employeeWithMostVisitsButton"
+                        onAction="#employeeWithMostVisitsButtonAction"
+                        mnemonicParsing="false"
+                        prefHeight="57.0"
+                        prefWidth="368.0"
+                        text="Employee with the most customer visits"
+                        GridPane.columnIndex="1"
+                        GridPane.rowIndex="1"
+                        GridPane.halignment="CENTER"
+                        GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+
+                <Button fx:id="averageNumberOfCostumersButton"
+                        onAction="#averageNumberOfCostumersButtonAction"
+                        mnemonicParsing="false"
+                        prefHeight="57.0"
+                        prefWidth="341.0"
+                        text="Average number of customers in a month"
+                        GridPane.rowIndex="2"
+                        GridPane.halignment="CENTER"
+                        GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+
+                <Button fx:id="weekdayWithMostVisitsButton"
+                        onAction="#weekdayWithMostVisitsButtonAction"
+                        mnemonicParsing="false"
+                        prefHeight="57.0"
+                        prefWidth="355.0"
+                        text="Day in a week with the most visits"
+                        GridPane.columnIndex="1"
+                        GridPane.rowIndex="2"
+                        GridPane.halignment="CENTER"
+                        GridPane.valignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </GridPane>
+
+        <Label fx:id="resultLabel"
+               alignment="CENTER"
+               contentDisplay="CENTER"
+               prefHeight="41.0"
+               prefWidth="550.0"
+               wrapText="true"
+               text="Result will appear here"
+               VBox.vgrow="ALWAYS">
+
+            <VBox.margin>
+                <Insets top="100.0" />
+            </VBox.margin>
+
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</VBox>
